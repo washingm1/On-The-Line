@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/On-The-Line/static/css/main.a08f0437.css",
-    "main.js": "/On-The-Line/static/js/main.6652f4fa.js",
+    "main.js": "/On-The-Line/static/js/main.8d76d388.js",
     "static/media/workout_video_placeholder.mp4": "/On-The-Line/static/media/workout_video_placeholder.afb099ee253d2caeedf0.mp4",
     "static/media/fitness_dieting_app.png": "/On-The-Line/static/media/fitness_dieting_app.2836f248c679ceb1b498.png",
     "static/media/aboutTrainerImage.jpg": "/On-The-Line/static/media/aboutTrainerImage.676c366c6bb22ce63cbf.jpg",
@@ -12,10 +12,10 @@
     "static/media/personal_training_client_result_2.jpg": "/On-The-Line/static/media/personal_training_client_result_2.8af66e79c7fe6c596bb1.jpg",
     "index.html": "/On-The-Line/index.html",
     "main.a08f0437.css.map": "/On-The-Line/static/css/main.a08f0437.css.map",
-    "main.6652f4fa.js.map": "/On-The-Line/static/js/main.6652f4fa.js.map"
+    "main.8d76d388.js.map": "/On-The-Line/static/js/main.8d76d388.js.map"
   },
   "entrypoints": [
     "static/css/main.a08f0437.css",
-    "static/js/main.6652f4fa.js"
+    "static/js/main.8d76d388.js"
   ]
 }
