@@ -345,20 +345,20 @@ export default function LeadFormQuiz() {
 
   // ── Success screen
   if (submitted) {
-    const summaryRows = [
-      { label: "firstName",         value: `${contact.firstName}` },
-      {label: "lastName", value: `${contact.lastName}` },
-      { label: "Email",        value: contact.email },
-      { label: "Phone",        value: `${contact.areaCode} ${contact.phone}` },
-      { label: "Country",      value: contact.country },
-      { label: "Occupation",   value: contact.occupation },
-      { label: "Gender",       value: answers.gender },
-      { label: "Goal",         value: answers.goal },
-      { label: "Age range",    value: answers.age },
-      { label: "Time zone",    value: answers.timezone },
-      { label: "Why coaching", value: answers.whyCoaching },
-      ...(contact.instagram ? [{ label: "Instagram", value: contact.instagram }] : []),
-    ];
+    // const summaryRows = [
+    //   { label: "firstName",         value: `${contact.firstName}` },
+    //   {label: "lastName", value: `${contact.lastName}` },
+    //   { label: "Email",        value: contact.email },
+    //   { label: "Phone",        value: `${contact.areaCode} ${contact.phone}` },
+    //   { label: "Country",      value: contact.country },
+    //   { label: "Occupation",   value: contact.occupation },
+    //   { label: "Gender",       value: answers.gender },
+    //   { label: "Goal",         value: answers.goal },
+    //   { label: "Age range",    value: answers.age },
+    //   { label: "Time zone",    value: answers.timezone },
+    //   { label: "Why coaching", value: answers.whyCoaching },
+    //   ...(contact.instagram ? [{ label: "Instagram", value: contact.instagram }] : []),
+    // ];
 
     return (
       <>

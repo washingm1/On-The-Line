@@ -1,4 +1,20 @@
 .footer {
-    height: 20vh;
+    margin-top: 10vh;
+    height: 10vh;
     background-color: rgb(41, 41, 41);
+        align-items: center;
+}
+.socialLinks {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.socialsIcon {
+    color: white;
+    font-size: larger;
+
 }

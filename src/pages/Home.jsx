@@ -1,7 +1,7 @@
 import bannerImage from '../images/workout_video_placeholder.mp4';
 import '../css/home.css'
 import LeadFormQuiz from '../Components/LeadFormQuiz';
-import appScreen from '../images/fitness_dieting_app.png';
+import appScreen from '../images/health_diet_fitness_app_mockup.png';
 import client1Img from '../images/personal_training_client_result_1.jpg'
 import client2Img from '../images/personal_training_client_result_2.jpg'
 import client3Img from '../images/personal_training_client_result_3.jpg'
