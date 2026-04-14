@@ -10,7 +10,8 @@ const styles =
     },
 
   headerFont: {
-    fontSize: "3.5rem"
+    fontSize: "3.5rem",
+    maxWidth: "80%" 
   },
 
   bodyFont: {
