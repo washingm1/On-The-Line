@@ -6,11 +6,14 @@ export default function Navbar (){
     return <nav className="nav">
         <Link to="/" className="home-page">On The Line</Link>
                   
-        <div className="hamburger" onClick={() => setOpen(!open)}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
+  <div 
+  className={`hamburger ${open ? "open" : ""}`} 
+  onClick={() => setOpen(!open)}
+>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+</div>
 
         <ul className={open ? "open": ""}>
           <CustomLink className="navLink" to="/about" onClick={() => setOpen(false)}>About</CustomLink>

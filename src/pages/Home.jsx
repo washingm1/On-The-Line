@@ -7,15 +7,60 @@ import client2Img from '../images/personal_training_client_result_2.jpg'
 import client3Img from '../images/personal_training_client_result_3.jpg'
 import trainer1Image from '../images/personalTrainer1.jpg'
 import trainer2Image from '../images/personalTrainer2.jpg'
-
+import { useEffect } from 'react';
 
 
 export default function Home() {
+        useEffect(() => {
+        const elements = document.querySelectorAll(".fade-in");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+
+    }, []);
+
+    useEffect(() => {
+        const slider = document.querySelector(".clientGallery");
+
+        let scrollAmount = 0;
+
+        const slide = setInterval(() => {
+            if (!slider) return;
+
+            scrollAmount += 300;
+
+            if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+                scrollAmount = 0;
+            }
+
+            slider.scrollTo({
+                left: scrollAmount,
+                behavior: "smooth"
+            });
+        }, 3000);
+
+        return () => clearInterval(slide);
+    }, []);
+
     return (
 <>
+<title>On The Line Coaching - Personal Training in Benson, NC - Nutrition Coaching </title>
+<meta name="description" content="Personal training and online coaching in Benson, NC. On The Line helps you lose fat, build strength, and create sustainable results with expert fitness and nutrition guidance." />
+<meta name="keywords" content="personal trainer Benson NC, online fitness coach North Carolina, weight loss coaching NC, nutrition coach Benson, functional fitness training, fat loss coaching" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-<div className="introBanner">
+
+<div className="introBanner" id='introBanner'>
     <div className='imgContainer'>
 
  <video autoPlay muted loop playsInline style={{ width: "100%" }}>
@@ -131,40 +176,17 @@ Both coaches are eager to help you reach your goals and manage your busy schedul
         <p className='caption'>Addison, a certified personal trainer, and nutritional coach.</p>
     </div>
 </div>
-{/*       
-        <div className="startButton">
-             <button
-    onClick={() => {
-      document.getElementById('introBanner').scrollIntoView({ behavior: 'smooth' });
-    } 
-}
-  >Start your Fitness Journey!</button>
-        </div> */}
-
 </div> 
 
 
-
-
-{/* 
-{
-
-       <div className='startNowButton'>
-  <button
-    onClick={() => {
-      document.getElementById('leadForm').scrollIntoView({ behavior: 'smooth' });
-    } 
-}
-  >
-    Start Now
-  </button>
-</div>
-    } */}
-
-
-
-
-
+<button
+  className="startNowButton"
+  onClick={() => {
+    document.getElementById('introBanner').scrollIntoView({ behavior: 'smooth' });
+  }}
+>
+  Start Your Journey
+</button>
 
 </>
     ); 

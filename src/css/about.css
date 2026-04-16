@@ -1,71 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =========================
+   GLOBAL
+========================= */
 .subheadings {
-    font-size: 3.5rem;
-      font-weight:500;
-      white-space: nowrap;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
-.aboutWrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 2rem;
+/* =========================
+   BANNER
+========================= */
+.aboutBanner {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(17, 42, 88, 0.85),
+        rgba(17, 42, 88, 0.85)
+    ),
+    url('../images/aboutTrainerImage.jpg'); /* optional: replace with real image */
+    background-size: cover;
+    background-position: center;
 }
 
 .aboutHeader {
-  width: 100%;
-  height: 20vh;
-  box-sizing: border-box;
-  padding: 1.5rem 2rem;
-  text-align: center;
-max-width: "80%" 
+    color: #E3DAC9;
+    text-align: center;
 }
 
-@media screen and (max-width: 830px) {
-    .aboutHeader {
-    white-space: wrap;
-    }
+/* =========================
+   WRAPPER
+========================= */
+.aboutWrapper {
+    width: 100%;
+    padding: 6vh 5vw;
 }
 
+/* =========================
+   CONTENT LAYOUT
+========================= */
 .aboutContent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
+/* =========================
+   TEXT AREA
+========================= */
 .aboutText {
-font-size: 1.4rem;
-  flex: 1 0 0;
-max-width: 60%;
-line-height: 2rem;
+    flex: 1;
 }
 
+/* GRID STYLE (THIS IS THE BIG UPGRADE) */
+.aboutGrid {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(17, 42, 88, 0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.aboutGrid:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ICON */
+.aboutGridIcon {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* TITLE */
+.aboutGridTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #112a58;
+}
+
+/* TEXT */
+.aboutGrid p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* =========================
+   IMAGE
+========================= */
 .aboutImage {
-  width: 30%;
-  margin-left: 5vw;
-  flex-shrink: 0;
-  border-radius: 8px;
-  object-fit: cover;
+    width: 40%;
+    border-radius: 12px;
+    object-fit: cover;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 830px) {
-  .aboutContent {
-    flex-direction: column;
-    padding: 1.25rem;
-  }
 
-  .aboutHeader {
-    padding: 1.25rem;
-  }
+    .aboutBanner {
+        height: 25vh;
+        padding: 1rem;
+    }
 
-  .aboutText {
-    width: 100%;
-    max-width: 100%;
-  }
+    .subheadings {
+        font-size: 2.2rem;
+    }
 
-  .aboutImage {
-    width: 100%;
-      margin-left: 0;
-  }
+    .aboutContent {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .aboutImage {
+        width: 100%;
+    }
+
+    .aboutGrid {
+        padding: 1.2rem;
+    }
 }

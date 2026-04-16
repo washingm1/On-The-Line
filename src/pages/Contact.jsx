@@ -1,32 +1,39 @@
 import ContactForm from "../Components/ContactForm"
-
-const styles = 
-{
-    wrap: {
-        padding: "2rem",
-        textAlign: "center",
-        height: "20vh",
-        alignItems: "center"
-    },
-
-  headerFont: {
-    fontSize: "3.5rem",
-    maxWidth: "80%" 
-  },
-
-  bodyFont: {
-    fontSize: "1.2rem"
-  }
-}
+import '../css/contact.css';
 
 export default function Contact() {
     return <>
-<div className="wrap" style={styles.wrap}>
-  <div className="contactHeader" style={styles.headerFont}>Get in Touch</div>
-        <div className="contactText" style={styles.bodyFont}>Have any questions or concerns? Feel free to reach out to us by filling out the form below. </div>
-</div>
-      
+
+<title>Start Fitness Journey - Contact Personal Trainer in Benson, NC | Start Coaching </title>
+<meta name="description" content="Contact On The Line to start personal training or online coaching in Benson, NC and surrounding areas. Get expert help with fat loss, strength, and nutrition today." />   
+
+<div className="wrap">
+
+  <div className="contactHeader">Start Your Fitness Journey</div>
+
+  <div className="contactText">
+    <p>
+      Ready to take the next step? Whether you're looking for personal training in Benson, NC or flexible online coaching, we're here to help. 
+      Fill out the form below and we'll reach out to learn more about your goals, your schedule, and the best plan for you.
+    </p>
+  </div>
+
+  {/* Optional trust highlights */}
+  <div className="contactHighlights">
+    <div>✔ Personalized Plan</div>
+    <div>✔ 24hr Response</div>
+    <div>✔ No Commitment</div>
+  </div>
+
+  <div className="formWrapper">
     <ContactForm />
+  </div>
+
+  <div className="contactInfo">
+    We respond within 24 hours. No pressure, just a conversation about your goals.
+  </div>
+
+</div>
+
     </>
-    
 }

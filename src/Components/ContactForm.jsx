@@ -43,7 +43,7 @@ const s = {
     width: "100%",
     padding: "0.65rem 0.9rem",
     border: "1.5px solid #e0e0e0",
-    borderRadius: "10px",
+    borderRadius: "5px",
     fontSize: "14px",
     fontFamily: "'DM Sans', sans-serif",
     color: "#111",

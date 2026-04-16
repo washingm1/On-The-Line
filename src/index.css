@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
   font-family: "Exo 2", sans-serif;
   box-sizing: border-box;
 }
+
 
 body {
   margin: 0;
@@ -27,16 +31,18 @@ body {
   height: 10vh;
   z-index: 10;
      z-index: 999;
+
 }
 
 /* CENTER LOGO */
 .home-page {
+    font-weight: bold;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-size: 3rem;
-  font-weight: 400;
   white-space: nowrap;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* DESKTOP MENU */
@@ -47,6 +53,8 @@ body {
   display: flex;
   gap: 1rem;
   font-size: larger;
+  font-weight: 600;
+    
 }
 
 .nav a {
@@ -55,7 +63,8 @@ body {
   display: flex;
   align-items: center;
   padding: .25rem;
-  
+  font-family: 'Space Grotesk', sans-serif;
+
 }
 
 
@@ -83,27 +92,22 @@ body {
     font-size: 2rem;
   }
 
-  /* HAMBURGER */
-  .hamburger {
-    display: flex;
-  
-    flex-direction: column;
-    justify-content: space-between;
-    width: 28px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 20;
-  }
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 1rem;  
+  z-index: 1000;
+}
 
   /* FULLSCREEN MENU */
   .nav ul {
     position: fixed;
-
-    top:-20px;
+    top:0px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -115,7 +119,7 @@ body {
     background-color: rgba(0, 0, 0, 0.95);
     transform: translateY(-100%);
     transition: transform 0.35s ease;
-
+    overflow: hidden;
     z-index: 15;
   }
 
@@ -126,4 +130,19 @@ body {
   .nav ul li {
     font-size: 2rem;
   }
+
+  /* TOP BAR */
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+/* MIDDLE BAR (disappears) */
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+/* BOTTOM BAR */
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 }
