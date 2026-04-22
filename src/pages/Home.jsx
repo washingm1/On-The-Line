@@ -91,28 +91,31 @@ export default function Home() {
 </div>
 
 </div>
-
-
 {/* Benefits Section */}
- <div className='benefitsContainer'>
-<div className='benefitsText'> 
-    <div className = "landing-subheadings" id='benefitsHeader'>What do you get?</div>
+<div className='benefitsContainer'>
+    <div className='benefitsText'>
+        <div className="landing-subheadings" id='benefitsHeader'>What do you get?</div>
 
         <dl className='benefitsList'>
             <dt>Workout plans made for you</dt>
             <dd>Designed for you to get stronger while maintaining your busy life</dd>
-             <dt>Your own meal plan</dt>
+            <dt>Your own meal plan</dt>
             <dd>A personalized nutrition guide to sustain a balanced & fit lifestyle</dd>
-             <dt>We Track your progress together</dt>
+            <dt>We Track your progress together</dt>
             <dd>Weekly check-ins with me, and progress made easy anywhere, anytime</dd>
-             <dt>Continuous Communication</dt>
+            <dt>Continuous Communication</dt>
             <dd>We are in this together! Ask me anything and everything. This is about you!</dd>
         </dl>
-
-</div>
+    </div>
 
     <div className='appImgWrap'>
-    <img className='appScreen'src= {appScreen} alt='fitness app screenshot showing calorie and nutrition tracker'></img>
+        <img className='appScreen' src={appScreen} alt='fitness app screenshot showing calorie and nutrition tracker' />
+        <div className='bookCallout'>
+            <p className='bookCalloutEyebrow'>Also Helpful</p>
+            <p className='bookCalloutTitle'>Cook Like I'm Book</p>
+            <p className='bookCalloutText'>Chef-approved, nutritionist-backed meals designed to fuel every stage of your fitness journey.</p>
+            <a href='https://cooklikeimbook.com/' target = "_blank" rel = "noreferrer" className='bookCalloutLink'>Explore &rarr;</a>
+        </div>
     </div>
 </div>
 
@@ -126,7 +129,6 @@ export default function Home() {
             <img className = "clientImage" id='client3' src = {client3Img} alt = 'A man and a woman before and after results of personal training fitness and dieting program' />
         </div> 
 </div> 
-
 
 
 

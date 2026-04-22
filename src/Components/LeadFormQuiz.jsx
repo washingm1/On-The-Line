@@ -92,7 +92,7 @@ const s = {
   },
   question: {
     fontSize: "1.2rem",
-    fontWeight: "600",
+    fontWeight: "500",
     lineHeight: 1.25,
     color: "#111",
     margin: "0 0 1rem",

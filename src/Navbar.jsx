@@ -17,8 +17,13 @@ export default function Navbar (){
 
         <ul className={open ? "open": ""}>
           <CustomLink className="navLink" to="/about" onClick={() => setOpen(false)}>About</CustomLink>
-            <CustomLink className="navLink" to ="/pricing" onClick={() => setOpen(false)}>Pricing</CustomLink>
+            {/* <CustomLink className="navLink" to ="/pricing" onClick={() => setOpen(false)}>Pricing</CustomLink> */}
+                
+          
+          <div className = "ctaContact"> 
           <CustomLink className="navLink" to="/contact" onClick={() => setOpen(false)}>Contact</CustomLink>
+          </div>
+
         </ul>
     </nav>
 }

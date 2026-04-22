@@ -6,8 +6,8 @@ return (
 <>
     <div className="footer">
        <div className="socialLinks">
-<FontAwesomeIcon className = 'socialsIcon' icon={faInstagram} size = '10x' ></FontAwesomeIcon>
-<FontAwesomeIcon className = 'socialsIcon'  icon={faTiktok}></FontAwesomeIcon>
+<a href="https://www.instagram.com/cooklikeimbook/" target='_blank' rel="noreferrer"> <FontAwesomeIcon className = 'socialsIcon' icon={faInstagram} size = '10x'></FontAwesomeIcon></a>
+<a href="https://www.tiktok.com/@cooklikeimbook" target='_blank' rel="noreferrer"><FontAwesomeIcon className = 'socialsIcon'  icon={faTiktok}></FontAwesomeIcon></a>
  </div>
     </div>
 

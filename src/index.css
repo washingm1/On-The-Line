@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
-  font-family: "Exo 2", sans-serif;
   box-sizing: border-box;
 }
 
@@ -32,6 +31,7 @@ body {
   z-index: 10;
      z-index: 999;
 
+
 }
 
 /* CENTER LOGO */
@@ -42,7 +42,6 @@ body {
   transform: translateX(-50%);
   font-size: 3rem;
   white-space: nowrap;
-  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* DESKTOP MENU */
@@ -51,11 +50,18 @@ body {
   padding: 0 1rem;
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   font-size: larger;
-  font-weight: 600;
-    
+  font-weight: 600;    
+
 }
+
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .nav a {
   color: inherit;
@@ -63,14 +69,19 @@ body {
   display: flex;
   align-items: center;
   padding: .25rem;
-  font-family: 'Space Grotesk', sans-serif;
-
 }
+
+/* .ctaContact a{
+  background-color: #7a7768;
+  border-radius: 4px;
+  padding: 15px;
+} */
+
 
 
 
 .navLink:hover {
-  color: #000000;
+  color: #dac49c;
 }
 
 /* HAMBURGER DEFAULT */

@@ -5,8 +5,8 @@
   --tan:       #E3DAC9;
   --navy:      #112a58;
   --navy-dim:  rgba(17, 42, 88, 0.85);
-  --tan-light: rgba(227, 218, 201, 0.25);
-  --font:      'Space Grotesk', sans-serif;;
+  --tan-light: rgb(238, 232, 220);
+  --font:      'Space Grotesk', sans-serif;
 }
 
 * {
@@ -83,7 +83,7 @@ hr {
 /* Left-side text overlay */
 .bannerText {
   position: absolute;
-  color: #E3DAC9;
+  color: white;
   top: 0;
   left: 0;
   width: 55%;
@@ -98,7 +98,7 @@ hr {
 .bannerQuote h1 {
   font-family: var(--font);
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
@@ -126,7 +126,6 @@ hr {
   border-radius: 4px;
   overflow-y: auto;
   max-height: 88vh;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
 }
 
 /* Banner — tablet */
@@ -193,9 +192,10 @@ hr {
 
   #leadForm {
     max-height: none;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
   }
 }
+
+
 /* =========================
    BENEFITS
 ========================= */
@@ -203,34 +203,88 @@ hr {
     display: flex;
     align-items: center;
     gap: 4rem;
-    padding: 6vh 5vw;
-}
+    padding: 6vh 20vw;
+   background-color: var(--tan-light);
+   
+    }
 
 .benefitsText {
     flex: 1;
 }
 
 .benefitsList dt {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 1rem;
+    margin-top: 1.8rem;
 }
 
 .benefitsList dd {
     margin-left: 0;
     opacity: 0.8;
+    padding: .6rem;
     margin-bottom: 0.5rem;
 }
 
 .appImgWrap {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .appScreen {
     max-width: 500px;
+    width: 100%;
     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.2));
+}
+
+/* ---- Book callout ---- */
+.bookCallout {
+    max-width: 500px;
+    width: 100%;
+    border-top: 1px solid rgba(17,42,88,0.15);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.bookCalloutEyebrow {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy);
+    opacity: 0.45;
+    margin: 0;
+}
+
+.bookCalloutTitle {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.bookCalloutText {
+    font-size: 0.78rem;
+    color: rgba(17,42,88,0.55);
+    line-height: 1.55;
+    margin: 0.1rem 0 0.4rem;
+}
+
+.bookCalloutLink {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--navy);
+    transition: color 0.2s ease;
+}
+
+.bookCalloutLink:hover {
+    color: #1a56db;
 }
 
 /* MOBILE */
@@ -241,18 +295,22 @@ hr {
     }
 
     .appScreen {
-    max-width: 50%;
-}
+        max-width: 60%;
+    }
 
+    .bookCallout {
+        max-width: 60%;
+        text-align: left;
+    }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
    CLIENT TRANSFORMATIONS
 ═══════════════════════════════════════════════════════════════════════════ */
 .clientTransformations {
-  background-color: var(--tan-light);
   padding: 6vh 5vw;
   text-align: center;
+  
 }
 
 #transformationsHeader {
@@ -304,11 +362,16 @@ hr {
 .userJourneyContainer {
   padding: 6vh 5vw;
   text-align: center;
-  background: #fff;
+      background:
+        linear-gradient(
+            rgba(17, 42, 88, 0.82),
+            rgba(17, 42, 88, 0.82)
+        );
 }
 
 #userJourneyHeader {
   margin-bottom: 3vh;
+  color: white;
 }
 
 .journeySteps {
@@ -318,7 +381,7 @@ hr {
   min-height: 80px;
   width: 65%;
   margin: 0 auto 1.25rem;
-  background: var(--tan);
+  background: var(--tan-light);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -351,7 +414,7 @@ hr {
   text-align: left;
   padding: 1rem 1.5rem 1rem 0.5rem;
   font-size: 0.95rem;
-  color: #444;
+  color: #000000;
   line-height: 1.6;
   border-left: 1px solid rgba(17, 42, 88, 0.15);
 }
@@ -406,7 +469,6 @@ hr {
    WHY CHOOSE
 ═══════════════════════════════════════════════════════════════════════════ */
 #whyChoose {
-  background-color: var(--tan-light);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

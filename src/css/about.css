@@ -3,8 +3,14 @@
 /* =========================
    GLOBAL
 ========================= */
+
+* {
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
 .subheadings {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 600;
     letter-spacing: -0.5px;
 }
@@ -12,17 +18,20 @@
 /* =========================
    BANNER
 ========================= */
+
 .aboutBanner {
     width: 100%;
-    height: 35vh;
+    height: 38vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(
-        rgba(17, 42, 88, 0.85),
-        rgba(17, 42, 88, 0.85)
-    ),
-    url('../images/aboutTrainerImage.jpg'); /* optional: replace with real image */
+    background:
+        linear-gradient(
+            rgba(17, 42, 88, 0.82),
+            rgba(17, 42, 88, 0.82)
+        ),
+        url('../images/aboutTrainerImage.jpg');
+
     background-size: cover;
     background-position: center;
 }
@@ -35,90 +44,146 @@
 /* =========================
    WRAPPER
 ========================= */
+
 .aboutWrapper {
     width: 100%;
-    padding: 6vh 5vw;
+    padding: 7vh 5vw;
+}
+
+/* =========================
+   INTRO TEXT
+========================= */
+
+.aboutIntro {
+    max-width: 850px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+}
+
+.aboutIntro p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #2d2d2d;
+    margin-bottom: 1rem;
 }
 
 /* =========================
    CONTENT LAYOUT
 ========================= */
+
 .aboutContent {
     display: flex;
     align-items: flex-start;
-    gap: 3rem;
-    max-width: 1200px;
+    gap: 4rem;
+    max-width: 1250px;
     margin: auto;
 }
 
 /* =========================
    TEXT AREA
 ========================= */
+
 .aboutText {
     flex: 1;
 }
 
-/* GRID STYLE (THIS IS THE BIG UPGRADE) */
+/* =========================
+   CONTENT CARDS
+========================= */
+
 .aboutGrid {
     background: #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem;
+    border-radius: 14px;
+    padding: 2rem;
     margin-bottom: 1.5rem;
-    border: 1px solid rgba(17, 42, 88, 0.08);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid rgba(17, 42, 88, 0.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.25s ease;
 }
 
 .aboutGrid:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
 }
 
-/* ICON */
-.aboutGridIcon {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+/* accent line replaces emoji icons */
+
+.aboutAccentLine {
+    width: 60px;
+    height: 4px;
+    background: #112a58;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
-/* TITLE */
+/* =========================
+   TITLES
+========================= */
+
 .aboutGridTitle {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: #112a58;
 }
 
-/* TEXT */
+/* =========================
+   BODY TEXT
+========================= */
+
 .aboutGrid p {
     font-size: 1.05rem;
-    line-height: 1.7;
-    opacity: 0.9;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
 }
 
 /* =========================
    IMAGE
 ========================= */
+
+.aboutImageWrap {
+    width: 42%;
+    position: sticky;
+    top: 100px;
+}
+
 .aboutImage {
-    width: 40%;
-    border-radius: 12px;
+    width: 100%;
+    border-radius: 14px;
     object-fit: cover;
 
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
 /* =========================
    MOBILE
 ========================= */
+
 @media (max-width: 830px) {
 
     .aboutBanner {
-        height: 25vh;
+        height: 28vh;
         padding: 1rem;
     }
 
     .subheadings {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
+    }
+
+    .aboutWrapper {
+        padding: 5vh 5vw;
+    }
+
+    .aboutIntro {
+        margin-bottom: 2.5rem;
+    }
+
+    .aboutIntro p {
+        font-size: 1rem;
+        line-height: 1.7;
     }
 
     .aboutContent {
@@ -126,11 +191,20 @@
         gap: 2rem;
     }
 
-    .aboutImage {
+    .aboutImageWrap {
         width: 100%;
+        position: static;
     }
 
     .aboutGrid {
-        padding: 1.2rem;
+        padding: 1.4rem;
+    }
+
+    .aboutGridTitle {
+        font-size: 1.2rem;
+    }
+
+    .aboutGrid p {
+        font-size: 0.98rem;
     }
 }
