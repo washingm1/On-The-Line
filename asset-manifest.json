@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/On-The-Line/static/css/main.3a8173e7.css",
-    "main.js": "/On-The-Line/static/js/main.6eed1bb6.js",
-    "static/media/workout_video_placeholder.mp4": "/On-The-Line/static/media/workout_video_placeholder.afb099ee253d2caeedf0.mp4",
-    "static/media/health_diet_fitness_app_mockup.png": "/On-The-Line/static/media/health_diet_fitness_app_mockup.95bd4cebf5e2ba07b6e8.png",
+    "main.js": "/On-The-Line/static/js/main.12f9c480.js",
+    "static/media/workout_video_placeholder.mp4": "/On-The-Line/static/media/workout_video_placeholder.e9cf5b0b879aad2a0e6e.mp4",
+    "static/media/health_diet_fitness_app_mockup.png": "/On-The-Line/static/media/health_diet_fitness_app_mockup.e9d70980f116858452d3.png",
     "static/media/aboutTrainerImage.jpg": "/On-The-Line/static/media/aboutTrainerImage.676c366c6bb22ce63cbf.jpg",
     "static/media/personalTrainer2.jpg": "/On-The-Line/static/media/personalTrainer2.3056129c1e48f11b654c.jpg",
     "static/media/personalTrainer1.jpg": "/On-The-Line/static/media/personalTrainer1.86e39001a865eb7122ad.jpg",
@@ -12,10 +12,10 @@
     "static/media/personal_training_client_result_2.jpg": "/On-The-Line/static/media/personal_training_client_result_2.8af66e79c7fe6c596bb1.jpg",
     "index.html": "/On-The-Line/index.html",
     "main.3a8173e7.css.map": "/On-The-Line/static/css/main.3a8173e7.css.map",
-    "main.6eed1bb6.js.map": "/On-The-Line/static/js/main.6eed1bb6.js.map"
+    "main.12f9c480.js.map": "/On-The-Line/static/js/main.12f9c480.js.map"
   },
   "entrypoints": [
     "static/css/main.3a8173e7.css",
-    "static/js/main.6eed1bb6.js"
+    "static/js/main.12f9c480.js"
   ]
 }
