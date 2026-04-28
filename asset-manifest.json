@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/On-The-Line/static/css/main.3a8173e7.css",
-    "main.js": "/On-The-Line/static/js/main.12f9c480.js",
+    "main.css": "/On-The-Line/static/css/main.f1a229e8.css",
+    "main.js": "/On-The-Line/static/js/main.8f1f25fe.js",
     "static/media/workout_video_placeholder.mp4": "/On-The-Line/static/media/workout_video_placeholder.e9cf5b0b879aad2a0e6e.mp4",
     "static/media/health_diet_fitness_app_mockup.png": "/On-The-Line/static/media/health_diet_fitness_app_mockup.e9d70980f116858452d3.png",
     "static/media/aboutTrainerImage.jpg": "/On-The-Line/static/media/aboutTrainerImage.676c366c6bb22ce63cbf.jpg",
@@ -11,11 +11,11 @@
     "static/media/personal_training_client_result_3.jpg": "/On-The-Line/static/media/personal_training_client_result_3.a24f2e5c2f138496cbb8.jpg",
     "static/media/personal_training_client_result_2.jpg": "/On-The-Line/static/media/personal_training_client_result_2.8af66e79c7fe6c596bb1.jpg",
     "index.html": "/On-The-Line/index.html",
-    "main.3a8173e7.css.map": "/On-The-Line/static/css/main.3a8173e7.css.map",
-    "main.12f9c480.js.map": "/On-The-Line/static/js/main.12f9c480.js.map"
+    "main.f1a229e8.css.map": "/On-The-Line/static/css/main.f1a229e8.css.map",
+    "main.8f1f25fe.js.map": "/On-The-Line/static/js/main.8f1f25fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a8173e7.css",
-    "static/js/main.12f9c480.js"
+    "static/css/main.f1a229e8.css",
+    "static/js/main.8f1f25fe.js"
   ]
 }
